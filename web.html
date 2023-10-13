@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Waku Waku Store</title>
+        <link rel="stylesheet" href="style.css" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+      </head>
+        <body>
+            <header>
+                <input type="checkbox" name="" id="chk1">
+                <div class="logo">
+                  <h1>Waku Waku Store</h1>
+                </div>
+                <div class="search-box">
+                    <form action="">
+                        <input
+                          type="text" 
+                          name="search" 
+                          id="srch" 
+                          placeholder="Search">
+                        <button type="submit"><i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li>
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                    </ul>
+                    <div class="menu">
+                        <label for="chk1">
+                          <i class="fa fa bars"></i>
+                        </label>
+                    </div>
+            </header>
+        </body>
+        
+        <body><head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+          @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');>
+          *{
+              padding: 0;
+              margin: 0;
+              color: #454545;
+          }
+          h1{
+              width: 3%;
+              position: relative;
+              top: 60px;
+              left: 90px;
+              cursor: pointer;
+          }
+          h1:before{
+              content: attr(data-count);
+              position: absolute;
+              color: white;
+              right: 16px;
+              font-size: 15px;
+              text-align: center;
+              top: 12px;
+              width: 20px;
+              height: 20px;
+              background: red;
+              border-radius: 50%;
+              opacity: 0;
+          }
+          section{
+              width: 90%;
+              height: 400px;
+              display: flex;
+              justify-content: space-around;
+              margin: 100px auto;
+          }
+          section div{
+              width: 22%;
+              height: 98%;
+              background: #f5f5f5;
+              padding: 1%;
+              position: relative;
+          }
+          img{
+              width: 180px;
+              height: 160px;
+              position: relative;
+              left: 1%;
+          }
+          p{
+              margin: 5px;
+          }
+          h6{
+              width: 50px;
+              padding: 5px;
+              margin: 10px;
+              margin-left: 1px;
+              font-size: 15px;
+          }
+          button{
+              padding: 5px;
+              background: #fab3ad;
+              border: none;
+              outline: none;
+              font-weight: bold;
+              color: #fafafa;
+              cursor: pointer;
+          }
+          section div span{
+              position: 14px;
+              top: 13px;
+              left: 13px;
+              width: 300px;
+              height: 186px;
+              display: none;
+          }
+          section div span img{
+              width: 100%;
+              height: 100%;
+          }
+          .select{
+              width: 60%;
+              height: 500px;
+              background: #222;
+              position: absolute;
+              top: -1000px;
+              left: 20%;
+              transition: 0.5s;
+              overflow-y: auto;
+              margin: auto;
+          }
+          .select div{
+              width: 100%;
+              height: 200px;
+              display: flex;
+              padding: 5px;
+              border: 1px solid white;
+              position: relative;
+              margin: 5px auto;
+          }
+          .select div img{
+              width: 35px;
+              height: 100%;
+          }
+          .select div p{
+              padding: 35px;
+              color: white;
+          }
+          .select div h6,
+          .select div button{
+              position: absolute;
+              left: 45%;
+              top: 50%;
+              color: white;
+          }
+          .select div button{
+              left: 60%;
+              top: 55%;
+          }
+          .select div span{
+              display: none;
+          }
+        </style>
+    </head>
+
+
+    <body>
+        
+        <h1> <i class="fa fa-shopping-cart"></i></h1>
+        <section>
+            <div>
+                <img src="anya.jpg">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+                <h6> Rp 50.000</h6>
+                <span></span>
+                <button>Add-cart</button>
+            </div>
+            <div>
+                <img  src="anya1.jpg">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+                <h6> Rp 250.000</h6>
+                <span></span>
+                <button>Add-cart</button>
+            </div>
+            <div>
+                  <img src="yor.jpg">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+                <h6> Rp 500.000</h6>
+                <span></span>
+                <button>Add-cart</button>
+            </div>
+            <div>
+                <img src="loid.jpg">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quidem, quo, modi ea voluptas tempora vero cumque incidunt eum animi</p>
+                <h6> Rp 600.000</h6>
+                <span></span>
+                <button>Add-cart</button>
+            </div>
+        </section>
+        <div class="select">
+        </div>
+    </body>
+    
+</html>
