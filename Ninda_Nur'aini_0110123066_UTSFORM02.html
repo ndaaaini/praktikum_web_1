@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Servis</title>
+    <style type="text/css">
+        body{
+            background-color: olivedrab;
+            text-align: center;
+        }
+        main{
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: beige;
+            padding: 20px;
+            box-shadow: 0 0 20px lavender;
+            border-radius: 10%;
+        }
+        form{
+            margin: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        label,
+        input,
+        select,
+        textarea {
+            display: inline-block;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        button:hover{
+        background-color: pink;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Booking Service</h2>
+       <form>
+          <label for="jeniskendaraan">Jenis Kendaraan:</label>
+          <select id="jeniskendaraan" name="jeniskendaraan" required>
+            <option value="mobil">Mobil</option>
+            <option value="motor">Motor</option>
+            <option value="bis">Bis</option>
+          </select><br/>
+          <label for="nama">Nama Pemesan:</label>
+          <input type="text" id="nama" name="nama"><br/>
+          <label for="kategoripeminjaman">Kategori Peminjaman:</label>
+          <label class="radio">
+            <input class="radio-one" type="radio" checked="checked" name="">
+            <span class="checkmark"></span>
+            Pribadi
+          </label>
+          <label class="radio">
+             <input class="radio-two" type="radio" name="">
+             <span class="checkmark"></span>
+             Perusahaan/organisasi
+          </label><br/>
+          <label for="deskripsi">Deskripsi Pemesanan:</label>
+          <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea><br/>
+          <label for="jam_tanggal">Jam, Tanggal servis:</label>
+          <input
+             type="date"
+             id="jam_tanggal"
+             name="jam_tanggal"
+             required><br/>
+          <label for="request">Request Montir:</label>
+          <input type="text" id="request" name="request" required><br/>
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" required><br/>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required><br/>
+
+          <button class="submit">Submit</button>
+          <button class="reset">Reset</button>
+        </div>
+       </form>
+       </main>
+</body>
+</html>
