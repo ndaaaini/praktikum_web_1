@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flexbox Layout</title>
+    <style>
+      body,
+      html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      .header{
+        background-color: #F2AAAE;
+        padding: 10px;
+      }
+      .row{
+        display: flex;
+      }
+      .row-nav{
+        background-color: #D0E9AE;
+        padding: 10px;
+        width: 100px
+      }
+      .row-aside{
+        background-color: #D0E9E9;
+        flex: 1;
+        padding: 10px;
+      }
+      .row-article{
+        background-color: #F4C09D;
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .image{
+        padding: 20px;
+        max-width: 25%;
+      }
+      .footer{
+        background-color: #FFE7C1;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Header</header>
+      <div class="row">
+        <div class="row-nav">Nav</div>
+        <div class="row-aside">Aside</div>
+        <div class="row-article">
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/images/akurat_20171211073050_V607ua.jpg"
+            alt="Gambar 1"
+            class="image"
+          />
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/images/akurat_20171211073050_V607ua.jpg"
+            alt="Gambar 2"
+            class="image"
+          />
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/akuratco/images/akurat_20171211073050_V607ua.jpg"
+            alt="Gambar 3"
+            class="image"
+          />
+        </article>
+      </div>
+    </div>
+    <footer class="footer">Footer</footer>
+  </body>
+</html>
